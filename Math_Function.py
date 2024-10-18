@@ -26,3 +26,25 @@ def max_absolute(num1, num2):
         return num1  # If the absolute value of num1 is greater, return num1
     else:
         return num2  # Otherwise, return num2
+
+# Function to find the floor value of a number
+def floor(number):
+    if number >= 0:
+        return int(number)  # Return the integer part directly for non-negative numbers
+    else:
+        int_part = int(number)  # Get the integer part of the negative number
+        return int_part if int_part == number else int_part - 1  # Adjust if it's not an integer
+
+# Function to find the ceiling value of a number
+def mceil(number):
+    if number < 0:
+        return int(number)  # Return the integer part directly for negative numbers
+    else:
+        int_part = int(number)  # Get the integer part of the non-negative number
+        return int_part if int_part == number else int_part + 1  # Adjust if it's not an integer
+
+
+.
+
+
+
