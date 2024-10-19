@@ -43,8 +43,48 @@ def mceil(number):
         int_part = int(number)  # Get the integer part of the non-negative number
         return int_part if int_part == number else int_part + 1  # Adjust if it's not an integer
 
+# Function to calculate the factorial of a number
+def factorial(num): 
+    if num < 0:
+        print("Factorial is not defined for negative values")
+        return None  # Return None for negative input
+    elif num == 0 or num == 1:
+        return 1  # The factorial of 0 or 1 is 1
+    else:
+        ans = 1  # Initialize the answer to 1
+        for i in range(1, num + 1):
+            ans *= i  # Multiply ans by i in each iteration
+        return ans  # Return the calculated factorial
 
-.
+# Function to calculate the power of num1 raised to num2
+def pow(num1, num2):
+    power = num1 ** num2  # Raise num1 to the power of num2
+    return power  # Return the result
+
+# Function to return the value of pi (π)
+def pi():
+    return 3.141592653589793  # Return the mathematical constant pi
+
+# Function to return the value of e (Euler's number)
+def e():
+    return 2.718281828459045  # Return the mathematical constant e
+
+# Function to convert radians to degrees
+def degrees(num):
+    deg = num * (180 / pi())  # Convert radians to degrees
+    return deg  # Return the result in degrees
+
+# Function to convert degrees to radians
+def radians(num):
+    rad = num * (pi() / 180)  # Convert degrees to radians
+    return rad  # Return the result in radians
+
+# Function to calculate the exponential of a number
+def exp(num):
+    ans = e() ** num  # Raise e to the power of num
+    return ans  # Return the result
+
+
 
 
 
