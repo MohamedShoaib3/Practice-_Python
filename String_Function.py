@@ -46,8 +46,8 @@ def isnumeric(world):
     ans = True  # Assume the string is numeric initially
     for i in world:
         # Check if the character is a digit (ASCII range 48 to 57)
-        if ord(i) < 48 or ord(i) > 57:
-            ans = False  # Set ans to False if a non-numeric character is found
+        if ord(i) > 48 and ord(i) < 57:
+            ans = True  # Set ans to False if a non-numeric character is found
             break  # Exit the loop early
     return ans  # Return whether the string is numeric
 
